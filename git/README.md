@@ -49,7 +49,7 @@ However, many people confuse Git with Github, GitLab, but they are not the same.
 control system, a tool that you can manage your code history. Where**
 [**Github**](https://github.com/) **and**
 [**GitLab**](https://about.gitlab.com/) **are web-based hosting services for Git
-repositories.**** With Git, you don't even need the internet access, you can
+repositories. With Git, you don't even need the internet access, you can
 work everything locally and have all version controls.** To connect to GitLab
 and working with others, you will need the internet access. The purpose of this
 document is to guide readers through all the necessary elements and commands of
@@ -101,7 +101,7 @@ To make your terminal console more git-friendly, you can copy paste the folder
 from attachment to your root directory, and copy the content of .bash_profile
 to your .bashrc or .bash_profile in the root directory too. (see figure 2-2).
 And after copying and pasting those files and file contents, type ```$ source
-.bashrc``. Then you should see something like figure 2-3 later when you work
+.bashrc```. Then you should see something like figure 2-3 later when you work
 with git.
 
 
@@ -141,7 +141,7 @@ reasons.
 
 Figure 3‑1: list directory after before and after initialize git.
 
-And one important thing is that **try to use**  ```$ git status```** all the time,
+And one important thing is that **try to use  ```$ git status``` all the time**,
 or after each command **.** It always shows you some hints about what you should
 do when something goes wrong.**
 
@@ -275,7 +275,7 @@ will explain git stash in the next edition.)
 - $ git stash branch add-stylesheetstash@{1}
 - $ git stash drop stash@{1}
 - $ git stash clear
-- # (Set up .gitignore file)
+  # (Set up .gitignore file)
 ```
 
 
@@ -484,12 +484,12 @@ This is nothing to do with the Git setup. It is just how we setup the Cygwin,
 and with this documented you can save your time googling around.
 
 
-    1. First install cygwin 32 bit, because some function don&#39;t work in 64 bit.
-    2. Download the file from &quot;rawgit.com/transcode-open/apt-cyg/master/apt-cyg&quot;
+    1. First install cygwin 32 bit, because some function don't work in 64 bit.
+    2. Download the file from "rawgit.com/transcode-open/apt-cyg/master/apt-cyg"
     3. Copy apt-cyg file to /bin in your C:\cygwin\bin
     4. Run &quot;chmod +x /bin/apt-cyg&quot; to make sure that apt-cyg is executable.
-    5. $ echo &#39;export http\_proxy=proxy:8080&#39; &gt;&gt; ~/.bashrc # to make sure that proxy settings.
-    6. $ echo &#39;export https\_proxy=proxy:8080&#39; &gt;&gt; ~/.bashrc
+    5. $ echo 'export http_proxy=proxy:8080'>>~/.bashrc # to make sure that proxy settings.
+    6. $ echo 'export https_proxy=proxy:8080'>>~/.bashrc
     7. Use the original package manager to install wget first.
     8. Everything should be fine at this moment, try "apt-cyg install nano"
     9. You can also use apt-cyg searchall to search packages.
