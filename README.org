@@ -5,5 +5,3 @@
 #+KEYWORDS:  org-mode, git, programming, web application, python, cpp, js, c#, java.
 #+LANGUAGE:  en
 #+OPTIONS:   H:4 num:nil toc:2 p:t
-
-* My Programming notes
