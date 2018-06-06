@@ -1,0 +1,32 @@
+#+TITLE: My notes for different Web APIs
+#+AUTHOR: Gene Ting-Chun Kao
+#+EMAIL: kao.gene@gmail.com
+
+
+
+* Different Web APIs
+There are many different HTTP APIs, REST is one of them.
+
+** REST (*RE*presentational *S*tate *T*ransfer)
+The [[http://www.restapitutorial.com/lessons/whatisrest.html][The six constraints]]:
+- Uniform Interface
+- Stateless
+- Cacheable
+- Client-Server
+- Layered System
+- Code on Demand (optional)
+** SOAP (Simple Object Access Protocol)
+** XML-RPC (XML Remote Procedure Call)
+** JSON-RPC (JSON Remote Procedure Call)
+** AMQP (Advanced Message Queuing Protocal)
+
+
+
+* GraphQL
+
+
+
+* References
+
+- [[https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/][GraphQL vs REST]]
+- [[https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/][REST vs RPC]]
