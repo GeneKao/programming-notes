@@ -21,7 +21,9 @@
 10. [Other useful commands](#10)
 11. [Development pipeline, branching model and discussion](#11)
 
+
 Appendix
+
 A. [Git Bash setup](#12)
 B. [Cygwin setup](#13)
 
