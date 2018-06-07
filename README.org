@@ -10,3 +10,9 @@
 
 ** Git
 - [[file:git/README.md][Using Git as a Pro]]
+
+** Hotkeys
+- [[file:hotkeys/README.org][Hotkeys for different programs]]
+
+** Web APIs
+- [[file:web_api/README.org][My notes for different Web APIs]]
