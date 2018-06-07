@@ -5,9 +5,15 @@
 
 
 * Different Web APIs
+
 There are many different HTTP APIs, REST is one of them.
 
-** REST (*RE*presentational *S*tate *T*ransfer)
+** REST (REpresentational State Transfer)
+REST is not only CRUD, but things are done through mainly CRUD-based operations.
+REST will use HTTP methods such as *GET*, *POST*, *PUT*, *DELETE*, *OPTIONS* and,
+hopefully, *PATCH* to provide semantic meaning for the intention of the action
+being taken.
+
 The [[http://www.restapitutorial.com/lessons/whatisrest.html][The six constraints]]:
 - Uniform Interface
 - Stateless
@@ -15,14 +21,40 @@ The [[http://www.restapitutorial.com/lessons/whatisrest.html][The six constraint
 - Client-Server
 - Layered System
 - Code on Demand (optional)
+
+HATEOAS (Hypermedia As The Engine Of Application State) is a component of the
+REST application architecture. REST is using [[https://stackoverflow.com/questions/29584903/what-is-hypermedia-hypermedia-controls-hypermedia-formats][hypermedia control]].
+
 ** SOAP (Simple Object Access Protocol)
+
 ** XML-RPC (XML Remote Procedure Call)
+
+RPC, compared to REST however, would not do CRUD. Most use only *GET* and
+*POST*, with GET being used to fetch information and POST being used for
+everything else. It is common to see RPC APIs using something like POST
+/deleteFoo, with a body of { “id”: 1 }, instead of the REST approach, which
+would be DELETE /foos/1.
+
+
 ** JSON-RPC (JSON Remote Procedure Call)
+
+
 ** AMQP (Advanced Message Queuing Protocal)
 
 
 
 * GraphQL
+
+GraphQL is incorrectly considered by some to be a "replacement" to REST
+
+- REST and GraphQL are totally different
+- GraphQL isn't a magic bullet, nor is it "better"
+- You can definitely use both at the same time
+- GraphQL is dope if used for the right thing
+
+*REST is an architectural conpect, where GraphQL is query language.*
+
+* Falcor
 
 
 
@@ -30,3 +62,4 @@ The [[http://www.restapitutorial.com/lessons/whatisrest.html][The six constraint
 
 - [[https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/][GraphQL vs REST]]
 - [[https://www.smashingmagazine.com/2016/09/understanding-rest-and-rpc-for-http-apis/][REST vs RPC]]
+- [[https://dev-blog.apollodata.com/graphql-vs-falcor-4f1e9cbf7504][GraphQL vs Falcor]]

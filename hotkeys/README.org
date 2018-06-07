@@ -1,0 +1,35 @@
+#+TITLE: Hotkeys for different programs
+#+AUTHOR: Gene Ting-Chun Kao
+#+EMAIL: kao.gene@gmail.com
+
+
+* Terminal and Emacs
+There are a lot of keyboard shortcuts for Terminal which are the same as Emacs.
+
+| Hotkeys | Description                                       |
+|---------+---------------------------------------------------|
+| Ctrl+f  | Move cursor one character to the right            |
+| Ctrl+b  | Move cursor one character to the left             |
+| Alt+f   | Move cursor one word to the right                 |
+| Alt+b   | Move cursor one word to the left                  |
+| Ctrl+a  | Move cursor to start of the line                  |
+| Ctrl+e  | Move cursor to end of the line                    |
+| Ctrl+u  | Cut everything from line start to cursor          |
+| Ctrl+k  | Cut everything from the cursor to end of the line |
+| Alt+d   | Cut the current word after the cursor             |
+| Ctrl+w  | Cut the current word before the cursor            |
+| Ctrl+y  | Paste the previous cut text                       |
+| Alt+y   | Paste the second latest cut text                  |
+| Ctrl+p  | Move to the previous line                         |
+| Ctrl+n  | Move to the next line                             |
+| Ctrl+s  | Search                                            |
+| Ctrl+r  | Reverse search                                    |
+| Ctrl+j  | End search                                        |
+| Ctrl+g  | Abort search (restores original line)             |
+| Alt+r   | Restores all changes made to line                 |
+| Tab     | Auto-complete a name                              |
+| Alt+?   | List all possible completions                     |
+| Alt+*   | Insert all possible completions                   |
+
+* References
+- [[https://wiki.archlinux.org/index.php/Keyboard_shortcuts][Archlinux keyboard shortcuts]]
