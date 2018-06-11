@@ -12,7 +12,7 @@ There are many different HTTP APIs, REST is one of them.
 REST is not only CRUD, but things are done through mainly CRUD-based operations.
 REST will use HTTP methods such as *GET*, *POST*, *PUT*, *DELETE*, *OPTIONS* and,
 hopefully, *PATCH* to provide semantic meaning for the intention of the action
-being taken.
+being taken. I can also do *file uploads*.
 
 The [[http://www.restapitutorial.com/lessons/whatisrest.html][The six constraints]]:
 - Uniform Interface
@@ -42,8 +42,9 @@ would be DELETE /foos/1.
 ** AMQP (Advanced Message Queuing Protocal)
 
 
+* GraphQL & Falcor
 
-* GraphQL
+** GraphQL
 
 GraphQL is incorrectly considered by some to be a "replacement" to REST
 
@@ -54,8 +55,31 @@ GraphQL is incorrectly considered by some to be a "replacement" to REST
 
 *REST is an architectural conpect, where GraphQL is query language.*
 
-* Falcor
+** Falcor
 
+- GraphQL has a schema and static types, Falcor does not have that. There is
+  currently no easy way (that I know of) to tell what type of data your Falcor
+  will return to you.
+
+
+*** Falcor Pros:
+- Really straight forward, easy to learn
+- Things like caching and query-merging included
+
+*** Falcor Cons:
+- Not as powerful as GraphQL (no arguments)
+- No built-in model/schema introspection
+- No implementations other than JavaScript, and little visible traction
+
+*** GraphQL Pros:
+- Very powerful and flexible
+- Static types and introspection — GraphiQL FTW
+- Many implementations in other languages, growing community
+
+*** GraphQL Cons:
+- Steeper learning curve
+- No batteries included. Fair amount of assembling required
+- Relay (Javascript GraphQL client) has a steep learning curve
 
 
 * References
