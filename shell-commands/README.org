@@ -1,0 +1,11 @@
+
+* Some useful shell commands here.
+
+
+
+** python
+
+To clean up all __pycache__ files in current directory.
+#+begin_src shell
+find . -type d -name __pycache__ -exec rm -r {} \+
+#+end_src
