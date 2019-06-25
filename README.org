@@ -14,5 +14,8 @@
 ** Hotkeys
 - [[file:hotkeys/README.org][Hotkeys for different programs]]
 
+** Shell commands
+- [[./shell-commands/README.org][python]]
+
 ** Web APIs
 - [[file:web_api/README.org][My notes for different Web APIs]]
