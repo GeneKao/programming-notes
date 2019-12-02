@@ -31,5 +31,41 @@ There are a lot of keyboard shortcuts for Terminal which are the same as Emacs.
 | Alt+?   | List all possible completions                     |
 | Alt+*   | Insert all possible completions                   |
 
+
+* Tmux 
+
+Shortcuts 
+
+| Key(s)                 | Description                                                                          |
+|------------------------+--------------------------------------------------------------------------------------|
+| `CTRL`+`b` `<command>` | sends `<command>` to tmux instead of sending it to the shell                         |
+|                        | **General Commands**                                                                   |
+| `?`                    | shows a list of all commands (`q`closes the list)                                    |
+| `:`                    | enter a tmux command                                                                 |
+|                        | **Working with Windows**                                                               |
+| `c`                    | creates a new window                                                                 |
+| `,`                    | rename current window                                                                |
+| `p`                    | switch to previous window                                                            |
+| `n`                    | switch to next window                                                                |
+| `w`                    | list windows (and then select with arrow keys)                                       |
+|                        | **Working with Panes**                                                                 |
+| `%`                    | split window vertically                                                              |
+| `-`                    | split window horizontally <br> requires `bind - split-window -v` in our `.tmux.conf` |
+| →                      | go to right pane                                                                     |
+| ←                      | go to left pane                                                                      |
+| ↑                      | go to upper pane                                                                     |
+| ↓                      | go to lower pane                                                                     |
+|                        | **Working with Sessions**                                                              |
+| `d`                    | detach from session                                                                  |
+
+Commands
+
+| Command                               | Description                                      |
+|---------------------------------------+--------------------------------------------------|
+| tmux new-session -s <SESSION NAME>    | creates a new session with name `<SESSION NAME>` |
+| tmux ls                               | lists all currently running tmux sessions        |
+| tmux attach-session -t <SESSION NAME> | attach to the session called `<SESSION NAME>`    |
+
+
 * References
-- [[https://wiki.archlinux.org/index.php/Keyboard_shortcuts][Archlinux keyboard shortcuts]]
+- [[https://wiki.archlinux.org/index.php/Keyboard_shortcuts][Archlinux keyboard shortcut]]
