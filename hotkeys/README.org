@@ -36,27 +36,33 @@ There are a lot of keyboard shortcuts for Terminal which are the same as Emacs.
 
 Shortcuts 
 
-| Key(s)                 | Description                                                                          |
-|------------------------+--------------------------------------------------------------------------------------|
-| `CTRL`+`b` `<command>` | sends `<command>` to tmux instead of sending it to the shell                         |
-|                        | **General Commands**                                                                   |
-| `?`                    | shows a list of all commands (`q`closes the list)                                    |
-| `:`                    | enter a tmux command                                                                 |
-|                        | **Working with Windows**                                                               |
-| `c`                    | creates a new window                                                                 |
-| `,`                    | rename current window                                                                |
-| `p`                    | switch to previous window                                                            |
-| `n`                    | switch to next window                                                                |
-| `w`                    | list windows (and then select with arrow keys)                                       |
-|                        | **Working with Panes**                                                                 |
-| `%`                    | split window vertically                                                              |
-| `-`                    | split window horizontally <br> requires `bind - split-window -v` in our `.tmux.conf` |
-| →                      | go to right pane                                                                     |
-| ←                      | go to left pane                                                                      |
-| ↑                      | go to upper pane                                                                     |
-| ↓                      | go to lower pane                                                                     |
-|                        | **Working with Sessions**                                                              |
-| `d`                    | detach from session                                                                  |
+| Key(s)   | Description                                                                          |
+|----------+--------------------------------------------------------------------------------------|
+|          | *General Commands*                                                                     |
+|----------+--------------------------------------------------------------------------------------|
+| ctrl+b ? | shows a list of all commands (`q`closes the list)                                    |
+| ctrl+b : | enter a tmux command                                                                 |
+|----------+--------------------------------------------------------------------------------------|
+|          | *Working with Windows*                                                                 |
+|----------+--------------------------------------------------------------------------------------|
+| ctrl+b c | creates a new window                                                                 |
+| ctrl+b , | rename current window                                                                |
+| ctrl+b p | switch to previous window                                                            |
+| ctrl+b n | switch to next window                                                                |
+| ctrl+b w | list windows (and then select with arrow keys)                                       |
+|----------+--------------------------------------------------------------------------------------|
+|          | *Working with Panes*                                                                   |
+|----------+--------------------------------------------------------------------------------------|
+| ctrl+b % | split window vertically                                                              |
+| ctrl+b " | split window horizontally <br> requires `bind - split-window -v` in our `.tmux.conf` |
+| ctrl+b → | go to right pane                                                                     |
+| ctrl+b ← | go to left pane                                                                      |
+| ctrl+b ↑ | go to upper pane                                                                     |
+| ctrl+b ↓ | go to lower pane                                                                     |
+|----------+--------------------------------------------------------------------------------------|
+|          | *Working with Sessions*                                                                |
+|----------+--------------------------------------------------------------------------------------|
+| ctrl+b d | detach from session                                                                  |
 
 Commands
 
