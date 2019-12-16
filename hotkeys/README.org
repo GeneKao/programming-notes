@@ -32,6 +32,15 @@ There are a lot of keyboard shortcuts for Terminal which are the same as Emacs.
 | Alt+*   | Insert all possible completions                   |
 
 
+* Org Mode
+
+| Hotkeys                | Description                         |
+|------------------------+-------------------------------------|
+| C-u NUMBER + shift tab | fold all blocks below certain level |
+
+
+
+
 * Tmux 
 
 Shortcuts 
@@ -71,6 +80,7 @@ Commands
 | tmux new-session -s <SESSION NAME>    | creates a new session with name `<SESSION NAME>` |
 | tmux ls                               | lists all currently running tmux sessions        |
 | tmux attach-session -t <SESSION NAME> | attach to the session called `<SESSION NAME>`    |
+
 
 
 * References
