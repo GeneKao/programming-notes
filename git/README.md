@@ -1,4 +1,4 @@
-# Using Git as a Pro
+# Using Git like a Pro
 
 ## How to use Git, GitLab, Github properly
 
@@ -7,7 +7,7 @@
 > Gene Ting-Chun Kao
 
 
-## Table of Contents
+### Table of Contents
 
 1. [Git vs GitHub vs GitLab](#1)
 2. [Set up your Git](#2)
@@ -22,7 +22,7 @@
 11. [Development pipeline, branching model and discussion](#11)
 
 
-Appendix
+### Appendix
 
 A. [Git Bash setup](#12)
 B. [Cygwin setup](#13)
@@ -30,7 +30,7 @@ B. [Cygwin setup](#13)
 
 ## 1. Git vs GitHub vs GitLab <a name="1"></a>
 
-![](./img/git-1-1.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-1-1.bmp)
 
 Figure 1‑1: Icon of Git, Github and GitLab.
 
@@ -39,21 +39,21 @@ Git is a very powerful tool that every developer should be familiar with.
 
 
 > By far, the most widely used modern version control system in the world
-> today is Git. Git is a mature, actively maintained open source project
+> today is Git. Git is a mature, actively maintained open-source project
 > originally developed in 2005 by Linus Torvalds, the famous creator of the Linux
 > operating system kernel. A staggering number of software projects rely on Git
-> for version control, including commercial projects as well as open source.
+> for version control, including commercial projects as well as open-source.
 [Atlassian.com](https://www.atlassian.com/git/tutorials/what-is-git)
 
 
 However, many people confuse Git with Github, GitLab, but they are not the same.
-[**Git**](https://git-scm.com/) **is a free and open source distributed version
-control system, a tool that you can manage your code history. Where**
-[**Github**](https://github.com/) **and**
-[**GitLab**](https://about.gitlab.com/) **are web-based hosting services for Git
-repositories. With Git, you don't even need the internet access, you can
-work everything locally and have all version controls.** To connect to GitLab
-and working with others, you will need the internet access. The purpose of this
+[<b>Git</b>](https://git-scm.com/) <b>is a free and open-source distributed version
+control system, a tool that you can manage your code history. Where</b>
+[<b>Github</b>](https://github.com/) <b>and</b> [<b>GitLab</b>](https://about.gitlab.com/) 
+<b> are web-based hosting services for Git
+repositories. With Git, you don't even need Internet access, you can
+work everything locally and have all version controls.</b> To connect to GitLab
+and working with others, you will need Internet access. The purpose of this
 document is to guide readers through all the necessary elements and commands of
 using Git, so readers will be able to use Git confidently, and in the proper
 way.
@@ -81,37 +81,34 @@ In this chapter, you are going to set up your Git environment in Windows, Mac or
 Linux.  In Linux and Mac, using the default terminal should be just fine. In
 windows, you can use [Git Bash](https://git-for-windows.github.io/) or
 [Cygwin](https://www.cygwin.com/) (See appendix A and B). After the
-installation, run the command which shows in figure 2-1 and sees if you have Git
+installation, run the command which shows in Figure 2-1 and sees if you have Git
 installed properly.
 
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-2-1.bmp)
 
+Figure 2‑1: To see the Git version from the terminal.
 
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-2-2.bmp)
 
-![](./img/git-2-1.bmp)
+Figure 2‑2: Attachment files
 
-Figure 2‑1 : To see Git version from the terminal.
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-2-3.bmp)
 
-![](./img/git-2-2.bmp)
+Figure 2‑3: git terminal setup
 
-Figure 2‑2 Attachment files
-
-![](./img/git-2-3.bmp)
-
-Figure 2‑3 git terminal setup
-
-To make your terminal console more git-friendly, you can copy paste the folder
+To make your terminal console more git-friendly, you can copy-paste the folder
 from attachment to your root directory, and copy the content of .bash_profile
-to your .bashrc or .bash_profile in the root directory too. (see figure 2-2).
+to your .bashrc or .bash_profile in the root directory too. (Figure 2-2).
 And after copying and pasting those files and file contents, type ```$ source
-.bashrc```. Then you should see something like figure 2-3 later when you work
+.bashrc```. Then you should see something like Figure 2-3 later when you work
 with git.
 
 
 You should do those configuration commands below before start using git. It is
-also important to set up your favorite editor first so you won't get panic
+also important to set up your favourite editor first so you won't get panic
 when annoying vi pop out later (I am sorry for vi users lol). For beginners, I
 will suggest using nano or other editors with GUI. (Those strings with the brown
-color you should replace whatever makes sense to you. Blue are comments,
+colour you should replace whatever makes sense to you. Blue are comments,
 don't type it in your terminal.)
 
 ``` bash
@@ -123,9 +120,8 @@ don't type it in your terminal.)
 - $ git config --list # (to see your git configurations.)
 ```
 
-**Before moving on to the next chapter, take a look at all key terms describe**
-[**here**](http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d31eb5_ud123-git-keyterms/ud123-git-keyterms.pdf)
-**.**
+<b>Before moving on to the next chapter, take a look at all key terms describe</b>
+[here](http://video.udacity-data.com.s3.amazonaws.com/topher/2017/March/58d31eb5_ud123-git-keyterms/ud123-git-keyterms.pdf).
 
 
 ## 3. Basic commands <a name="3"></a>
@@ -133,19 +129,19 @@ don't type it in your terminal.)
 If you would like to use git as your version control, the first thing you would
 have to do is to initialize the git in your project folder with ```git init```
 command. After git is initialized, you will see a hidden .git folder in your
-directory, see figure 3-1. This is where git store all its information about
-your code version. And remember, **do not modify anything in this .git
-directory** unless you know what you are doing, they are hidden for good
+directory, see Figure 3-1. This is where git store all its information about
+your code version. And remember, <b>do not modify anything in this .git
+directory</b> unless you know what you are doing, they are hidden for good
 reasons.
 
 
-![](./img/git-3-1.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-3-1.bmp)
 
 Figure 3‑1: list directory after before and after initialize git.
 
-And one important thing is that **try to use  ```$ git status``` all the time**,
-or after each command **.** It always shows you some hints about what you should
-do when something goes wrong.**
+And one important thing is that <b>try to use</b>  ```$ git status``` <b>all the time
+or after each command. It always shows you some hints about what you should
+do when something goes wrong.</b>
 
 
 The following commands are some of the most basic commands that you will use
@@ -166,10 +162,10 @@ can check the most basic commands after finishing this tutorial.
 
 In this chapter, you will learn how to use commands such as ```$ git log``` with
 different flags to see all commit history from the repo. (Tips for readers not
-familiar with command line. Whenever you are in the
+familiar with the command line. Whenever you are in the
 [less](https://en.wikipedia.org/wiki/Less_(Unix)) command environment, which you
-will see &quot; **:**&quot; on the bottom-left corner, press **B** and **space**
-to go one page up and down. Press **J** and **K** to scroll up and down. **Q**
+will see &quot;<b>:</b>&quot; on the bottom-left corner, press <b>B</b> and <b>space</b>
+to go one page up and down. Press <b>J</b> and <b>K</b> to scroll up and down. <b>Q</b>
 to quit.)
 
 
@@ -181,12 +177,12 @@ cd gitflow``` to move to the directory.
 
 Now you can type one of the most commonly used commands ```$ git log --oneline
 --graph --all``` in your terminal, this will list all the commits and branches
-like in the figure 4-1.
+like in Figure 4-1.
 
 
-![](./img/git-4-1.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-4-1.bmp)
 
-Figure 4‑1 list all commits and branches using ```git log --oneline --graph --all```
+Figure 4‑1: list all commits and branches using ```git log --oneline --graph --all```
 
 If you want to see more about all commits you can use to ```$ git log --stat```
 or ```$ git log --patch``` to show all the details. Or you can use different flags
@@ -217,16 +213,16 @@ type```$ git log --help```.
 And don't forget, you can always type your command together with the SHA to
 print the specific commit. For example, by typing ```$ git show b72a395```
 you will see all detail commit information include the lines have been modified
-and line numbers, see figure 4-2.
+and line numbers, see Figure 4-2.
 
 
-![](./img/git-4-2.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-4-2.bmp)
 
 Figure 4‑2: git show one commit by specifying its SHA.
 
 ## 5. Add commit to a repo <a name="5"></a>
 
-Basically, in figure 5-1 you can see a diagram of how Git works. Let's focus on
+Basically, in Figure 5-1 you can see a diagram of how Git works. Let's focus on
 all local Git functions first. To begin with, three major components of Git are
 working directory, staging index and repository. Simply speaking, working
 directory is where all your current files are which includes tracked, untracked
@@ -234,7 +230,7 @@ and ignored files, staging index is a cache of files that you would like to
 commit and the repository is where all Git store all snapshots of your code.
 
 
-![](./img/git-5-1.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-5-1.bmp)
 
 Figure 5‑1: Diagram of Git work directory, staging index and repo
 
@@ -251,7 +247,7 @@ the directory. If we do the commit now, only the change of readme file will be
 recorded to the repository.
 
 
-By the way, it is better not to use the word "**and**" in the one Git commit,
+By the way, it is better not to use the word "<b>and</b>" in the one Git commit,
 because normally it just makes more sense to separate tasks into two commits.
 
 
@@ -281,28 +277,28 @@ will explain git stash in the next edition.)
 ```
 
 
-![](./img/git-5-2.bmp)
+![](https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-5-2.bmp)
 
 Figure 5‑2: git stash
 
 ## 6. Tagging, branching, merging <a name="6"></a>
 
-When you want to create the separated development, you can create the branch.
+When you want to create a separated development, you can create the branch.
 You can imagine this as actual tree branches. You store all your different
-development in different branches so they are separated with each other. So
+development in different branches so they are separated from each other. So
 let's create a branch called develop by typing ```$ git branch develop```. 
 Then if you type ```$ git branch --list -all``` you will see all
 branches, and the \* symbol indicates the current development branch you are at,
-the default branches is **master**. By switching between different branches you
-need to type ```$ git checkout develop```. **One thing amazing is that all
-your files switch automatically whenever you switch between branches**. By doing
+and the default branch is <b>master</b>. By switching between different branches you
+need to type ```$ git checkout develop```. <b>One thing amazing is that all
+your files switch automatically whenever you switch between branches</b>. By doing
 this, you can experiment different kinds of stuff and don't need to worry
 about messing up your correct code or to back up all your previous development
 files.
 
 
 After you modify your separated development, you can use Git merge to merge one
-branch with another branch. Normally Git will merge it automatically, unless two
+branch with another branch. Normally Git will merge it automatically unless two
 branches have modified the same lines, then you will have to manually fix them.
 
 ``` bash
@@ -321,7 +317,7 @@ branches have modified the same lines, then you will have to manually fix them.
 
 ## 7. Experiments using checkout <a name="7"></a>
 
-You can not only experiment your code using different branches and switch
+You can not only experiment with your code using different branches and switch
 between them by using git checkout, but also switch to your previous commit or
 specific files.
 
@@ -347,7 +343,7 @@ commit.
 - $ git commit --amend # (modify the last commit Don&#39;t use it in Public History)
 - $ git revert 43s20r # (create a new commit to undo)
 - $ git reset HEAD~1 # (Be careful! Don't use it in Public History)
-- $ git reset --mixed HEAD~1 # (move to working directory, this is default, add and commit)
+- $ git reset --mixed HEAD~1 # (move to the working directory, this is the default, add and commit)
 - $ git reset --soft HEAD~1 # (move to staging index, commit)
 - $ git reset --hard HEAD~1 # (move to trash, deleted)
 ```
@@ -383,7 +379,7 @@ documentation](https://help.github.com/articles/adding-an-existing-project-to-gi
 
 ## 11. Development pipeline, branching model and discussion <a name="11"></a>
 
-I will suggest to use gitflow to managing your version and big software
+I will suggest using gitflow to managing your version and big software
 development. You can also install it on the command line so everything become so
 easy.
 
@@ -407,7 +403,7 @@ Check the official repository on GitHub:
 
 ## A. Git Bash setup <a name="12"></a>
 
-Installation procedure for using git bash as linux VM connector:
+Installation procedure for using git bash as Linux VM connector:
 
 [https://git-for-windows.github.io/](https://git-for-windows.github.io/)
 
@@ -427,7 +423,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# Default to human readable figures
+# Default to human-readable figures
 alias df='df -h'
 alias du='du -h'
 

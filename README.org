@@ -9,7 +9,7 @@
 
 
 ** Git
-- [[file:git/README.md][Using Git as a Pro]]
+- [[file:git/README.md][Using Git like a Pro]]
 
 ** Hotkeys
 - [[file:hotkeys/README.org][Hotkeys for different programs]]
