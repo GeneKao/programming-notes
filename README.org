@@ -7,6 +7,7 @@
 #+OPTIONS:   H:4 num:nil toc:2 p:t
 
 
+[[https://media.giphy.com/media/FmOV8SCJ5fa8M/giphy.gif]]
 
 ** Git
 - [[file:git/README.md][Using Git like a Pro]]
