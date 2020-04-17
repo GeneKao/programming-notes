@@ -19,3 +19,7 @@
 
 ** Web APIs
 - [[file:web_api/README.org][My notes for different Web APIs]]
+
+
+** Other people's notes or cheatsheets 
+- [[https://github.com/fniessen/refcard-org-mode][refcard-org-mode]]
