@@ -11,6 +11,10 @@
 ** Git
 - [[file:git/README.md][Using Git like a Pro]]
 
+** Python
+
+- [[file:python/][My python programming notes]]
+
 ** Hotkeys
 - [[file:hotkeys/README.org][Hotkeys for different programs]]
 

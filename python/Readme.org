@@ -1,0 +1,10 @@
+* My python programming notes
+
+** 
+
+** Numpy
+
+- [[file:list.py][List]]
+- [[file:class.py][Class]]
+- [[file:numpy.py][Numpy]]
+- [[file:scipy.py][Scipy]]
