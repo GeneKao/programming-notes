@@ -2,8 +2,10 @@
 
 ** add upstream and modify original url (for a fork)
 
-``` bash
-$ git remote -v 
+
+#+begin_src bash
+
+$ git remote -v
 > origin  https://github.com/USERNAME/REPOSITORY.git (fetch)
 > origin  https://github.com/USERNAME/REPOSITORY.git (push)
 
@@ -16,6 +18,9 @@ $ git remote -v
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
 > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
 
-``` 
+#+end_src
+
+
+
 
 
