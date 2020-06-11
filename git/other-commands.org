@@ -22,5 +22,17 @@ $ git remote -v
 
 
 
+** add all .gitmodules 
 
+For git clone we can use this command
+
+#+begin_src bash
+git clone --recursive https://github.com/USERNAME/REPOSITORY.git
+#+end_src 
+
+If submodule need to be updated
+
+#+begin_src bash
+git submodule update --init --recursive
+#+end_src 
 
