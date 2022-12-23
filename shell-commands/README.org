@@ -3,9 +3,20 @@
 
 
 
-** python
+** Python
 
-To clean up all __pycache__ files in current directory.
+To clean up all __pycache__ files in current directory:
 #+begin_src shell
 find . -type d -name __pycache__ -exec rm -r {} \+
 #+end_src
+
+
+** Imagemagick
+
+To crop an image:
+#+begin_src shell
+                      #left,top      right,bottom
+convert test.png -crop +180+140 -crop -60-140 cropped.png
+#+end_src
+reference: https://stackoverflow.com/questions/50494810/chop-4-sides-of-image-with-imagemagick
+
